@@ -1,0 +1,11 @@
+email2feed
+
+Basically the idea here is that emails go into:
+    bacn@example.com
+They will be accessible via ATOM or RSS2 at:
+    http://example.com/bacn
+
+Notes:
+ * There will be no authentication. All feeds are accessible.
+ * Maybe use smtp2web: http://code.google.com/p/smtp2web/
+ 
