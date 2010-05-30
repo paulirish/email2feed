@@ -1,0 +1,10 @@
+<html>
+  <body>
+  <b>Recipients</b>
+  <ul>
+    {% for recipient in recipients %}
+      <li><a href="/feed/show?e={{ recipient.toAddress }}">{{ recipient.toAddress }}</a></li>     
+    {% endfor %}
+    </ul>
+  </body>
+</html>

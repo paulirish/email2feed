@@ -1,0 +1,11 @@
+<html>
+  <body>
+  <b>To: {{to}}</b>
+  <table style="width:600px">
+     {% for message in messages %}
+      <tr><td><strong>Sent:</strong> {{message.dateSent}}</td><td>{{message.fromAddress}}</td><td><strong>Subject:</strong> {{message.subject|escape}}</td></tr>
+      <tr style="border-bottom:1px solid black"><td colspan="3"><strong>Body:</strong><br/>{{message.body|escape}}</td></tr>     
+    {% endfor %}
+    </table>
+  </body>
+</html>
